@@ -1,8 +1,12 @@
+#Scripts to install different python packages for all JupyterHub users
+
+#Scripts Begin
+##############################################################################################################################################################
 # Downloading Python Packages
 
 sudo -E /opt/tljh/user/bin/pip install numpy matplotlib rdkit
 
-# Creating a Shared Conda Environment Containing Desired Python Package (Recommanded)
+# Creating a Shared Conda Environment Containing Desired Python Package (Recommended)
 
 sudo /opt/tljh/user/bin/conda create-- prefix /home/yourusername/envs/classname python=3.10 numpy pandas matplotlib jupyterlab ipykernel
 
