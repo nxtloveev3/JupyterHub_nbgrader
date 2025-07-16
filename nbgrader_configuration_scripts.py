@@ -1,5 +1,5 @@
 #Scripts for nbgrader configuration
-#You needs to create a configuration file with content shown below in home directory (~/.jupyter/nbgrader_config.py), using a Linux text editor.
+#You needs to create this configuration file with content shown below in home directory (~/.jupyter/nbgrader_config.py), using a Linux text editor.
 
 #Scripts Begin
 ##############################################################################################################################################################
