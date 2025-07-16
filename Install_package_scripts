@@ -2,11 +2,11 @@
 
 #Scripts Begin
 ##############################################################################################################################################################
-# Downloading Python Packages
+# Downloading Python Packages (Option 1)
 
 sudo -E /opt/tljh/user/bin/pip install numpy matplotlib rdkit
 
-# Creating a Shared Conda Environment Containing Desired Python Package (Recommended)
+# Creating a Shared Conda Environment Containing Desired Python Package (Option 2 Recommended)
 
 sudo /opt/tljh/user/bin/conda create-- prefix /home/yourusername/envs/classname python=3.10 numpy pandas matplotlib jupyterlab ipykernel
 
