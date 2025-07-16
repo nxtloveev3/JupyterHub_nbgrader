@@ -22,7 +22,7 @@ chmod ugo+rw /tmp/exchange
 
 sudo mkdir -p /usr/local/etc/jupyter/
 
-# Copy the nbgrader Configuration from Home Directory to Global Setting (Note: Configuration file can be found in nbgrader_configuration_script)
+# Copy the nbgrader Configuration from Home Directory to Global Setting (Note: Configuration file can be found in nbgrader_configuration_script.py)
 
 sudo cp ~/.jupyter/nbgrader_config.py /usr/local/etc/jupyter/nbgrader_config.py
 
