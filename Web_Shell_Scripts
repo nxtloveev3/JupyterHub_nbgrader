@@ -1,4 +1,4 @@
-#Scripts to follow in a newly created instance's web shell to establish secure communication for the newly created instance and add an administration account 
+#Scripts to follow in a newly created Jupyterhub instance's web shell to establish secure communication for the newly created instance and add an administration account 
 
 #Scripts Begin
 ##############################################################################################################################################################
