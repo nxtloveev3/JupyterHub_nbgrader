@@ -1,8 +1,8 @@
 # JupyterHub_nbgrader_Jetstream2_Set_Up_Scripts
-This repository contains the up-to-date scripts for setting up a JupyterHub with nbgrader instance on Jetstream2.
+This repository contains the latest versioned scripts for deploying a JupyterHub instance with nbgrader on the Jetstream2 cloud platform. These scripts are designed to streamline setup and ensure consistency across instructional environments.
 
 # JupyterHub_nbgrader_GCP_Image
-You can also find the Google Cloud Platform (GCP) image for building a pre-configured JupyterHub instance integrated with nbgrader in this repository. The image is designed to provide a reproducible, low-barrier platform for instructors to incorporate coding and autograded assignments into chemistry (or other STEM) courses with minimal setup effort.
+This repository also includes resources for building a pre-configured JupyterHub image with nbgrader on Google Cloud Platform (GCP). The image offers a reproducible, low-barrier environment that enables instructors to integrate coding and auto-graded assignments into chemistry and other STEM courses with minimal setup overhead.
 
 You can find the GCP image at:
 1. https://storage.googleapis.com/jupyterhub-nbgrader/jupyter-hub-image-asia.vmdk(asia)
