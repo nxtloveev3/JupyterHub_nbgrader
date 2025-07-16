@@ -1,0 +1,39 @@
+# Quick Setup of nbgrader (Replace <your_course_name> with Desired Class Name)
+
+nbgrader quickstart <your_course_name>
+
+#  Remove Existing File Exchange Folder
+
+rm -rf /tmp/exchange
+
+# Making a New File Exchange Folder
+
+mkdir /tmp/exchange
+
+#Provide Permission to Write and Read for Administrator and Students to the File Exchange Folder
+
+chmod ugo+rw /tmp/exchange
+
+# Creating a Folder for the nbgrader Configuration in Global Setting
+
+sudo mkdir -p /usr/local/etc/jupyter/
+
+# Copy the nbgrader Configuration from Home Directory to Global Setting
+
+sudo cp ~/.jupyter/nbgrader_config.py/usr/local/etc/jupyter/nbgrader_config.py
+
+# Disable the Formgrader Extension System-wide
+
+sudo jupyter server extension disable nbgrader.server_extensions.formgrader
+
+# Disable the Formgrader Extension Icon System-wide
+
+sudo jupyter labextension disable @jupyter/nbgrader:formgrader
+
+# Enable Formgrader Extension for Administrator
+
+jupyter server extension enable --user –py nbgrader.server_extensions.formgrader
+
+# Enable Formgrader Extension Icon for Administrator
+
+jupyter labextension enable --level=user @jupyter/nbgrader:formgrader
