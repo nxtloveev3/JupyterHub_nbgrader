@@ -1,0 +1,23 @@
+#Scripts to install C++ kernel on JupyterHub instance using web sell
+
+#Scripts Begin
+##############################################################################################################################################################
+#Switching to the Root Use (This grants global access)
+
+sudo su –
+
+#Activating the TLJH Environment
+
+source /opt/tljh/user/bin/activate
+
+#Installing mamba a Much Faster Dependency Solver for Kernel Package
+
+conda install -c conda-forge mamba
+
+#Installing xeus-cling Jupyter Kernel Pakcage
+
+mamba install -c conda-forge xeus-cling
+
+#Reload the New Configuration
+
+sudo tljh-config reload
