@@ -1,3 +1,7 @@
+#Scripts to install bash kernel on JupyterHub instance in web shell
+
+#Scripts Begin
+##############################################################################################################################################################
 #Switching to the Root User (It grants global access)
 
 sudo su –
