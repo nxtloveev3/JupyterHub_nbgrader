@@ -1,0 +1,31 @@
+#Switching to the Root User (It grants global access)
+
+sudo su –
+
+#Activating the TLJH Environment
+
+source /opt/tljh/user/bin/activate
+
+#Installing mamba a Much Faster Dependency Solver for Bash Kernel Package
+
+conda install -c conda-forge mamba
+
+#Creating a Separate Environment to Avoid Dependency Conflicts with Jupyterhub
+
+mamba create -n bash-kernel-env python=3.10 -c conda-forge
+
+#Activate the Environment to Install Bash Kernel
+
+Conda activate bash-kernel-env
+
+#Installing Bash Kernel to the Newly Created Environment
+
+mamba install bash_kernel -c conda-forge
+
+#Linking the Kernel Spec with the Sharable Folder
+
+python -m bash_kernel.install --prefix=/opt/tljh/user
+
+#Reload the New Configuration
+
+sudo tljh-config reload
