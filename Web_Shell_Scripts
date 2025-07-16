@@ -1,0 +1,26 @@
+#Scripts to follow in a newly created instance's web shell to establish secure communication for the newly created instance and add an administration account 
+
+#Scripts Begin
+##############################################################################################################################################################
+# Enable HTTPS for the Newly Created Instance
+
+sudo tljh-config set https.enabled true# Configure HTTPS (Replace <you@example.com> With Your Institution Email)
+
+sudo tljh-config set https.letsencrypt.email <you@example.com>
+
+# Configure HTTPS (Replace <your JupyterHub’s hostname> with Instance’s Hostname)
+
+sudo tljh-config add-item https.letsencrypt.domains <your JupyterHub’s hostname>
+
+# Load the New Configuration
+
+sudo tljh-config reload proxy
+
+# Add Administration Account(Replace <your-username> with a Desired Userame)
+
+sudo tljh-config add-item users.admin <your-username> 
+
+# Load the New Configuration
+
+sudo tljh-config reload proxy
+
