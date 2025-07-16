@@ -1,3 +1,7 @@
+#Scripts to type into the Jupyterhub terminal to set up nbgrader in a newly created instance
+
+#Scripts Begin
+################################################################################################################
 # Quick Setup of nbgrader (Replace <your_course_name> with Desired Class Name)
 
 nbgrader quickstart <your_course_name>
@@ -18,9 +22,9 @@ chmod ugo+rw /tmp/exchange
 
 sudo mkdir -p /usr/local/etc/jupyter/
 
-# Copy the nbgrader Configuration from Home Directory to Global Setting
+# Copy the nbgrader Configuration from Home Directory to Global Setting (Note: Configuration file can be found in nbgrader_configuration_script)
 
-sudo cp ~/.jupyter/nbgrader_config.py/usr/local/etc/jupyter/nbgrader_config.py
+sudo cp ~/.jupyter/nbgrader_config.py /usr/local/etc/jupyter/nbgrader_config.py
 
 # Disable the Formgrader Extension System-wide
 
